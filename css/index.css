@@ -18,23 +18,6 @@ header .spot li a span { position: relative;}
 header .spot li a span:hover { color: #2d5b79; text-decoration: underline;}
 
 .visual { position: relative; padding: 0 50px;}
-.visual .prev, .visual .next { display: block; position: absolute; top: 50%; width: 25px; height: 47px; transform: translateY(-50%); 
-    background: url(../img/sp_com.png) no-repeat; color: transparent;}
-.visual .prev { left: 82px; background-position: -128px -60px;}
-.visual .next { right: 82px; background-position: -158px -60px;}
-.visual .control { position: absolute; left: 0; bottom: 55px; width: 100%; text-align: center;}
-.visual .control > div { display: inline-block; position: relative; padding: 0 45px 0 0;}
-.visual .control > div > div { position: absolute; right: 0;}
-.visual .control > div > div a { overflow: hidden; display: inline-block; width: 8px; height: 9px; margin-left: 7px; background: url('../img/sp_com.png') no-repeat; opacity: 0.5;}
-.visual .control > div > div a.on { opacity: 1;}
-.visual .control > div > div a.play { background-position: -108px -72px;} 
-.visual .control > div > div a.pause { background-position: -108px -60px;} 
-.visual .control ul { display: inline-block; position: relative; top: -7px; font-size: 0;}
-.visual .control li { display: inline-block; padding: 0 3px;}
-.visual .control li.on a { background: #fff;}
-.visual .control li a { display: block; width: 50px; height: 3px; background: rgba(255, 255, 255, 0.5);}
-.visual .control ul, .visual .control li { display: inline-block;}
-.visual .control a { color: transparent;}
 .visual .content > div { height: 690px;}
 /* .visual .control a { border: 1px solid red} */ 
 .visual .content .slide { background: url(../img/bg_main02.jpg) no-repeat center; }
@@ -61,3 +44,46 @@ header .spot li a span:hover { color: #2d5b79; text-decoration: underline;}
 .product li:nth-child(4) a:hover:before { background-position: -216px -178px;}
 .product li:nth-child(5) a:hover:before { background-position: -288px -178px;}
 .product li:nth-child(6) a:hover:before { background-position: -360px -178px;}
+
+.slide .prev, .slide .next { display: block; position: absolute; top: 50%; width: 25px; height: 47px; transform: translateY(-50%); 
+    background: url(../img/sp_com.png) no-repeat; color: transparent; z-index: 10;}
+.slide .prev { left: 82px; background-position: -128px -60px;}
+.slide .next { right: 82px; background-position: -158px -60px;}
+.slide .control { position: absolute; left: 0; bottom: 55px; width: 100%; text-align: center;}
+.slide .control > div { display: inline-block; position: relative; padding: 0 45px 0 0;}
+.slide .control > div > div { position: absolute; right: 0;}
+.slide .control > div > div a { overflow: hidden; display: inline-block; width: 8px; height: 9px; margin-left: 7px; background: url('../img/sp_com.png') no-repeat; opacity: 0.5;}
+.slide .control > div > div a.on { opacity: 1;}
+.slide .control > div > div a.play { background-position: -108px -72px;} 
+.slide .control > div > div a.pause { background-position: -108px -60px;} 
+.slide .control ul { display: inline-block; position: relative; top: -7px; font-size: 0;}
+.slide .control li { display: inline-block; padding: 0 3px;}
+.slide .control li.on a { background: #fff;}
+.slide .control li a { display: block; width: 50px; height: 3px; background: rgba(255, 255, 255, 0.5);}
+.slide .control ul, .visual .control li { display: inline-block;}
+.slide .control a { color: transparent;}
+
+.magazine { position: relative; height: 670px; background: #dfd9d1; overflow: hidden;}
+.magazine h2 { padding: 40px 0 16px; font-size: 30px; color: #000; text-align: center; line-height: 100%;}
+.magazine p { font-size: 16px; color: #000; text-align: center; line-height: 100%;}
+.magazine .slide_box > div { position: absolute; left: 50%; transform: translate(-50%, 0); top: 140px; width: 960px; height: 430px;}
+.magazine .slide_box > div:nth-child(1) { margin-left: -1020px;}
+.magazine .slide_box > div:nth-child(3) { margin-left: 1020px;}
+.magazine .slide_box .left { position: relative; overflow: hidden; float: left; width: 660px; height: 430px;}
+.magazine .slide_box .left div { position: absolute; top: 0; right: 0; width: 200px; height: 100%; padding: 47px 20px 0px; background: rgba(0,0,0,0.5);
+    box-sizing: border-box;}
+.magazine .slide_box .left div h3 { color: #fff; font-size: 20px;}
+.magazine .slide_box .left div h3 span { display: block; font-weight: normal; line-height: 32px;}
+.magazine .slide_box .left div p { padding-top: 9px; color: #fff; font-size: 16px; text-align: left; line-height: 24px;}
+.magazine .slide_box .left div a { position: absolute; right: 20px; bottom: 40px; display: block; width: 160px; height: 45px; border: 1px solid #fff; font-size: 16px; color: #fff; text-align: center; line-height: 45px;}
+.magazine .slide_box .left img { height: 100%;}
+.magazine .slide_box .right { float: right; width: 300px; height: 430px; padding: 20px 20px 0; background: #fff; box-sizing: border-box;} 
+.magazine .slide_box .right li { padding-bottom: 20px;}
+.magazine .slide_box .right li a { display: table; width: 100%;}
+.magazine .slide_box .right li a div { display: table-cell; position: relative; height: 82px; padding-left: 100px; font-size: 16px; 
+    color: #333; vertical-align: middle;}
+.magazine .slide_box .right li a strong { display: block; font-size: 13px; color: #000;}
+.magazine .slide_box .right li a img { position: absolute; left: 0; top: 0; width: 82px; height: 82px;}
+.magazine .control { bottom: 45px;}
+.magazine .prev { left: 50%; margin: 15px 0 0 -520px;}
+.magazine .next { right: 50%; margin: 15px -520px 0 0;}
